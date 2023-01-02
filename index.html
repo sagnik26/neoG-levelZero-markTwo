@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>national quiz contest</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="head">National Quiz Contest</h1>
+      <p class="between">(Answer 5 Questions)</p>
+      <!-- <button class="btn again">Play Again!</button> -->
+      <!-- <div class="number">?</div> -->
+    </header>
+    <main>
+      <section class="left">
+            <label for="live" class="font-size label_one hidden">Who is the Prime Minister of India?</label><br>
+            <div class="container">
+                <input type="text" id="live" name="live" value="" class="inputProp input_one hidden">
+                <button class="button btn_one hidden" id="btn--live"><strong>SUBMIT</strong></button>
+                <button class="button--green hidden btn-g1">✓</button>
+                <button class="button--red hidden btn-r1">✕</button>
+            </div>
+
+            <label for="color" class="font-size label_two hidden">Who is the Foreign Minister of India?</label><br>
+            <div class="container">
+                <input type="text" id="color" name="color" value="" class="inputProp input_two hidden">
+                <button class="button btn_two hidden" id="btn--color"><strong>SUBMIT</strong></button>
+                <button class="button--green hidden btn-g2">✓</button>
+                <button class="button--red hidden btn-r2">✕</button>
+            </div>
+
+            <label for="fan" class="font-size label_three hidden">What is the National Animal of India?</label><br>
+            <div class="container">
+                <input type="text" id="fan" name="fan" value="" class="inputProp input_three hidden">
+                <button class="button btn_three hidden" id="btn--fan"><strong>SUBMIT</strong></button>
+                <button class="button--green hidden btn-g3">✓</button>
+                <button class="button--red hidden btn-r3">✕</button>
+            </div>
+
+            <label for="biriyani" class="font-size label_four hidden">What is the National Flower of India?</label><br>
+            <div class="container">
+                <input type="text" id="biriyani" name="biriyani" value="" class="inputProp input_four hidden">
+                <button class="button btn_four hidden" id="btn--biriyani"><strong>SUBMIT</strong></button>
+                <button class="button--green hidden btn-g4">✓</button>
+                <button class="button--red hidden btn-r4">✕</button>
+            </div>
+            
+            <label for="cars" class="font-size label_five hidden">What is the National Bird of India?</label><br>
+            <div class="container">
+                <input type="text" id="cars" name="cars" value="" class="inputProp input_five hidden">
+                <button class="button btn_five hidden" id="btn--cars"><strong>SUBMIT</strong></button>
+                <button class="button--green hidden btn-g5">✓</button>
+                <button class="button--red hidden btn-r5">✕</button>
+            </div>
+      </section>
+
+      <section class="right">
+        <label for="name" id="name-label">What is your name?</label><br>
+        <div class="name-input">
+          <input type="text" id="name" name="name" class="inputProp">
+          <button class="button" id="btn--name">→</button>
+        </div>
+        <div id="greet"></div>
+        <div id="game_over"></div>
+        <p class="label-score">💯 Score => <span class="score">0</span></p>
+        <p class="label-highscore">
+          🥇 Highscores:
+              <div style="display: flex; flex-direction: column; align-items: center; margin-top: 1.2em;">
+                <h4 style="margin-bottom: 0.8em;">Debajit => 5</h4>
+                <h4 style="margin-bottom: 0.8em;">Akansha => 3</h4>
+              </div>
+              --------------------
+              <h4 style="margin-top: 0.8em;">If you scored higher <br><br> then ping me and <br><br> I'll update it</h4>
+        </p>
+      </section>
+    </main>
+    <script src="js/index.js" type="module" ></script>
+  </body>
+</html>
